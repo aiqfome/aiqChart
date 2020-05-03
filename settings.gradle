@@ -1,1 +1,2 @@
-include ':williamchart', ':mobile', ':wearable'
+rootProject.name='aiqChart'
+include ':app'

@@ -1,2 +1,3 @@
 rootProject.name='aiqChart'
 include ':app'
+include ':aiqchart'

@@ -13,12 +13,12 @@
 
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_gallery" />
+            app:destination="@id/nav_bar_chart" />
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.aiqfome.aiqchartdemo.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_bar_chart"
+        android:name="com.aiqfome.aiqchartdemo.ui.gallery.BarChartFragment"
+        android:label="@string/menu_bar_chart"
+        tools:layout="@layout/fragment_bar_chart" />
 </navigation>

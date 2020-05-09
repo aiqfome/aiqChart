@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/nav_bar_chart"
-        android:name="com.aiqfome.aiqchartdemo.ui.gallery.BarChartFragment"
+        android:name="com.aiqfome.aiqchartdemo.ui.bar_chart.BarChartFragment"
         android:label="@string/menu_bar_chart"
         tools:layout="@layout/fragment_bar_chart" />
 </navigation>

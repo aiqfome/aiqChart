@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.gallery.BarChartFragment">
+        tools:context=".ui.bar_chart.BarChartFragment">
 
         <TextView
             android:id="@+id/text_gallery"

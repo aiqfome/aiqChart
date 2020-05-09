@@ -1,4 +1,4 @@
-package com.aiqfome.aiqchartdemo.ui.gallery;
+package com.aiqfome.aiqchartdemo.ui.bar_chart;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

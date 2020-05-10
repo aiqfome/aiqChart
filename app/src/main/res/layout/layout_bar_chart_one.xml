@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view_dashboard_week_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:paddingBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText">
+
+            <LinearLayout
+                android:id="@+id/bar_chart_one_content"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:layout_margin="@dimen/activity_margin"
+                android:orientation="vertical">
+
+                <com.aiqfome.aiqchart.view.BarChartView
+                    android:id="@+id/bar_chart_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="152dp"
+                    app:chart_axis="false"
+                    app:chart_barSpacing="25dp"
+                    app:chart_fontSize="11sp"
+                    app:chart_labelColor="@color/colorAccent" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</layout>

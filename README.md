@@ -12,15 +12,21 @@
 <p>For those who would like to contribute, our idea is not just to implement the conventional features of the chart, but something that could be pleasant and intuitive when representing and visualizing data, to learn more <a href="#-contributing">visit</a>.</p>
 
 <p align="center">
-  <a href="https://github.com/aiqfome" style="text-decoration:none">
+  <a href="https://github.com/aiqfome" style="text-decoration:none" target="_blank">
     <img alt="Made by AiqFome" src="https://img.shields.io/badge/made%20by-aiqfome-blueviolet">
   </a>
 
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/aiqfome/aiqChart">
+  <a href="https://github.com/aiqfome/aiqChart/commits" style="text-decoration:none" target="_blank">
+    <img alt="Last Commit" src="https://img.shields.io/github/last-commit/aiqfome/aiqChart">
+  </a>
 
-  <img alt="Contributors" src="https://img.shields.io/github/contributors/aiqfome/aiqChart">
+  <a href="https://github.com/aiqfome/aiqChart/graphs/contributors" style="text-decoration:none" target="_blank">
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/aiqfome/aiqChart">
+  </a>
 
-  <img alt="License" src="https://img.shields.io/github/license/aiqfome/aiqChart">
+  <a href="LICENSE" style="text-decoration: none">
+    <img alt="License" src="https://img.shields.io/github/license/aiqfome/aiqChart">
+  </a>
 </p>
 
 <p align="center">
@@ -45,7 +51,8 @@
 
 ### Prerequisites
 
-- Android 4.0 and above
+- Library - Android Jelly Bean 4.1+ (API 16)
+- Sample - Android Jelly Bean 4.1+ (API 16)
 
 ### Gradle
 

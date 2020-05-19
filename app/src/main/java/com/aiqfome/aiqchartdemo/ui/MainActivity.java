@@ -15,22 +15,22 @@ import com.aiqfome.aiqchartdemo.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    private ActivityMainBinding bindingMain;
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bindingMain = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        setSupportActionBar(bindingMain.appBarLayout.toolbar);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        setSupportActionBar(binding.appBarLayout.toolbar);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_bar_chart)
-                .setDrawerLayout(bindingMain.drawerLayout)
+                .setDrawerLayout(binding.drawerLayout)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(bindingMain.navView, navController);
+        NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
     @Override

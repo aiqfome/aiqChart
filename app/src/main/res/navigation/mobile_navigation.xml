@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
             app:destination="@id/nav_bar_chart" />
+        <action
+            android:id="@+id/action_nav_home_to_lineChart"
+            app:destination="@id/nav_line_chart" />
     </fragment>
 
     <fragment
@@ -21,4 +24,9 @@
         android:name="com.aiqfome.aiqchartdemo.ui.bar_chart.BarChartFragment"
         android:label="@string/menu_bar_chart"
         tools:layout="@layout/fragment_bar_chart" />
+    <fragment
+        android:id="@+id/nav_line_chart"
+        android:name="com.aiqfome.aiqchartdemo.ui.line_chart.LineChart"
+        android:label="Line Chart"
+        tools:layout="@layout/fragment_line_chart" />
 </navigation>

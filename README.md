@@ -16,17 +16,15 @@
     <img alt="Made by AiqFome" src="https://img.shields.io/badge/made%20by-aiqfome-blueviolet">
   </a>
 
-  <a href="https://github.com/aiqfome/aiqChart/commits" style="text-decoration:none" target="_blank">
-    <img alt="Last Commit" src="https://img.shields.io/github/last-commit/aiqfome/aiqChart">
+  <a href="https://jitpack.io/#aiqfome/aiqChart" style="text-decoration:none" target="_blank">
+    <img alt="Last version in JitPack" src="https://jitpack.io/v/aiqfome/aiqChart.svg">
   </a>
 
-  <a href="https://github.com/aiqfome/aiqChart/graphs/contributors" style="text-decoration:none" target="_blank">
-    <img alt="Contributors" src="https://img.shields.io/github/contributors/aiqfome/aiqChart">
-  </a>
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/aiqfome/aiqChart">
 
-  <a href="LICENSE" style="text-decoration: none">
-    <img alt="License" src="https://img.shields.io/github/license/aiqfome/aiqChart">
-  </a>
+  <img alt="Contributors" src="https://img.shields.io/github/contributors/aiqfome/aiqChart">
+
+  <img alt="License" src="https://img.shields.io/github/license/aiqfome/aiqChart">
 </p>
 
 <p align="center">
@@ -56,10 +54,23 @@
 
 ### Gradle
 
-- Sorry, we don't have a build yet :cry:, but we are working to make it available as soon as possible :neckbeard::computer:
+#### [JitPack](https://jitpack.io/):
 
+* Add it in your root `build.gradle` at the end of repositories:
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
-🙈 🙉 🙊
+
+* Add dependency in your app level `build.gradle`
+```gradle
+dependencies {
+  implementation 'com.github.aiqfome:aiqChart:${VERSION}'
+}
 ```
 
 ---

@@ -6,14 +6,18 @@ import androidx.lifecycle.ViewModel;
 
 public class HomeViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
+    private final MutableLiveData<String> mText = new MutableLiveData<>();
+    private final MutableLiveData<String> dText = new MutableLiveData<>();
 
     public HomeViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("Welcome to aiqChart!");
+        dText.setValue("Click on menu and enjoy our charts examples ;)");
     }
 
-    public LiveData<String> getText() {
+    public LiveData<String> getHomeText() {
         return mText;
+    }
+    public LiveData<String> getDescriptionText() {
+        return dText;
     }
 }

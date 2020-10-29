@@ -24,12 +24,23 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false);
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        setupObservers();
+
+        return binding.getRoot();
+    }
+
+    private void setupObservers() {
+        homeViewModel.getHomeText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 binding.textHome.setText(s);
             }
         });
-        return binding.getRoot();
+        homeViewModel.getDescriptionText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(String s) {
+                binding.descriptionHome.setText(s);
+            }
+        });
     }
 }
